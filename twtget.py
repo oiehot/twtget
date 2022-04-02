@@ -206,4 +206,6 @@ def export_html_demo(filepath: str, user_id: str) -> None:
 
 
 if __name__ == "__main__":
-    export_html_demo("TWTUSER.html", "TWTUSER")
+    user_id: str = "TWTUSER"
+    crawl_demo(user_id)
+    export_html_demo(f"{user_id}.html", user_id)
